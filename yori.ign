@@ -5,11 +5,35 @@
   "passwd": {
     "users": [
       {
+        "groups": [
+          "wheel"
+        ],
         "name": "magi",
         "passwordHash": "$y$j9T$73SINDr3Kf3akCiyMi.cM.$4b0QKShLPz5g2XIeULUTit2vwF3AP3PAK/oY.MzV7l4",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHLBlEpa/0mf35VQoni+qewn+Z3BZjiPfmuTCmO/W0KB pawp@protonmail.com"
         ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,yori"
+        },
+        "mode": 420
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "contents": "[Unit]\nDescription=Mount data directory\n\n[Mount]\nWhat=192.168.0.9:/volume1/shared-1\nWhere=/var/mnt/data\nType=nfs4\n\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "var-mnt-data.mount"
       }
     ]
   }
