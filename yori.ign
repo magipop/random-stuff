@@ -1,0 +1,15 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "magi",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHLBlEpa/0mf35VQoni+qewn+Z3BZjiPfmuTCmO/W0KB pawp@protonmail.com"
+        ]
+      }
+    ]
+  }
+}
