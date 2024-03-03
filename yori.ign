@@ -6,6 +6,7 @@
     "users": [
       {
         "name": "magi",
+        "passwordHash": "$y$j9T$73SINDr3Kf3akCiyMi.cM.$4b0QKShLPz5g2XIeULUTit2vwF3AP3PAK/oY.MzV7l4",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHLBlEpa/0mf35VQoni+qewn+Z3BZjiPfmuTCmO/W0KB pawp@protonmail.com"
         ]
